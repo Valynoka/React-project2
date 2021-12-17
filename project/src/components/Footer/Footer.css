@@ -1,0 +1,23 @@
+.footer{
+    width: 100%;
+}
+
+.footer__list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.footer__item{
+    margin-right: 10%;
+}
+
+.footer__item:last-child{
+    margin-right: 0;
+}
+
+.footer__icon-img{
+    width: 50px;
+    height: 50px;
+}
