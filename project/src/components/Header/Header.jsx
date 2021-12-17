@@ -2,7 +2,7 @@ import './Header.css'
 import '../Button/Button.css'
 import {Link} from "react-router-dom";
 import logo from '../Img/logo.png'
-import Shadow from '../Img/Shadow.png'
+
 
 function Header(){
     return(
@@ -17,16 +17,16 @@ function Header(){
                         <Link className={'header__item-link'} to = {'/'}>Главная</Link>
                     </li>
                     <li className={'header__item'}>
-                        <Link className={'header__item-link'} to = {'/'}>Отзывы</Link>
+                        <Link className={'header__item-link'} to = {'Reviews'}>Отзывы</Link>
                     </li>
                     <li className={'header__item'}>
-                        <Link className={'header__item-link'} to = {'/'}>Кто мы</Link>
+                        <Link className={'header__item-link'} to = {'Works'}>Как работаем</Link>
                     </li>
                 </ul>
             </nav>
-            <button className={'header__button button'} to = {'/'}>
-                <Link className={'header__button-link'} to = {'/'}>Вход</Link>
-            </button>
+            <Link className={'header__button-link'} to = {'/'}>
+                <button className={'header__button button'}>Вход</button>
+            </Link>
         </header>
     )
 }

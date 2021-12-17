@@ -6,8 +6,6 @@
     align-items: center;
 }
 
-
-
 .header__menu{
     width: 100%;
 }
@@ -18,7 +16,7 @@
     width: 100%;
 }
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 520px){
     .header__menu-list{
         display: flex;
         flex-direction: column;
@@ -59,19 +57,3 @@
 }
 
 
-.header__button-link{
-    outline: none;
-    color: antiquewhite;
-    padding: 20% 30%;
-    background-color: black;
-    border-radius: 20px;
-    outline: none;
-    border: none;
-    min-width: 70px;
-}
-
-/*@media screen and (max-width: 768px){*/
-/*    .header__button-link{*/
-/*        padding: 20% 30%;*/
-/*    }*/
-/*}*/
