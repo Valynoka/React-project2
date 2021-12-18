@@ -15,8 +15,6 @@ function App() {
             <Route index element = {<StartPage/>}/>
             <Route path={'Reviews'} element = {<Reviews/>}/>
             <Route path={'Works'} element = {<Works/>}/>
-
-
         </Route>
       </Routes>
   );

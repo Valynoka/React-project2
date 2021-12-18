@@ -1,3 +1,4 @@
+import React from "react";
 import Illustration from '../Img/Illustration.png'
 import './StartPage.css'
 

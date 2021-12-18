@@ -1,13 +1,11 @@
+import Slider from "../Slider/Slider";
+
 function Reviews(){
     return(
-        <div className={'reviews__wrapper'}>
-            <h2 className={'reviews__title'}>Отзывы наших клиентов</h2>
-            <ul>
-                <li>
-
-                </li>
-            </ul>
-        </div>
-        )
+        <>
+            <h2>Отзывы</h2>
+            <Slider/>
+        </>
+    )
 }
 export default Reviews;

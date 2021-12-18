@@ -1,3 +1,4 @@
+import React from "react";
 import './Footer.css'
 import telegram from "../Img/telegram.png";
 import instagram from "../Img/instagram.png";
