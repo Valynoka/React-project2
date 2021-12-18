@@ -1,11 +1,13 @@
-import React from "react";
+import React, {useContext} from "react";
 import './Header.css'
 import '../Button/Button.css'
 import {Link} from "react-router-dom";
 import logo from '../Img/logo.png'
+import {AppContext} from "../../App";
 
 
 function Header(){
+    const {isVisible, setIsVisible} = useContext(AppContext)
     return(
         <header className={'header'}>
             <Link className={'header__logo-link'} to = {'/'}>
@@ -25,9 +27,10 @@ function Header(){
                     </li>
                 </ul>
             </nav>
-            <Link className={'header__button-link'} to = {'/'}>
-                <button className={'header__button button'}>Вход</button>
-            </Link>
+            <button className={'header__button button'} onClick={()=> setIsVisible(true)}>Вход</button>
+            {/*<Link className={'header__button-link'} to = {'/'}>*/}
+            {/*    <button className={'header__button button'}>Вход</button>*/}
+            {/*</Link>*/}
         </header>
     )
 }

@@ -1,0 +1,40 @@
+.modal{
+    position: absolute;
+    z-index: 12;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #e8e4dd;
+    padding: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+.modal:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30%;
+    height: 30%;
+    border-radius: 50%;
+    background-color: #ee9f0f;
+    filter: blur(300px);
+}
+
+.modal:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 30%;
+    height: 30%;
+    border-radius: 50%;
+    background-color: #03abd2;
+    filter: blur(300px);
+}

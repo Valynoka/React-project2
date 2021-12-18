@@ -1,0 +1,42 @@
+
+.loginForm{
+    width: 70%;
+    padding: 3%;
+    border: 1px solid #E01F3D;
+    border-radius: 20px;
+    background: url("../Img/Shadow.png");
+    background-position: top left;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.loginForm__title{
+    font-size: 200%;
+    margin-bottom: 25px;
+}
+
+.input__lable{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.input__field{
+    padding: 2%;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    background-color: #e0d8c5;
+    /*filter: blur(0px);*/
+    position: relative;
+    z-index: 4;
+    margin-bottom: 4px;
+}
+
+.input__field::placeholder{
+    color: black;
+}
+
+.loginForm__button{
+    margin-top: 25px;
+}
