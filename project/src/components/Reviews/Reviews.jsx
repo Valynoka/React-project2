@@ -1,10 +1,12 @@
-import Slider from "../Slider/Slider";
+import './Reviews.css'
+import Swiper from "../Swiper/Swiper";
+
 
 function Reviews(){
     return(
         <>
-            <h2>Отзывы</h2>
-            <Slider/>
+            <h2 className={'reviews__title'}>Отзывы</h2>
+            <Swiper/>
         </>
     )
 }

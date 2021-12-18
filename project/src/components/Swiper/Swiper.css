@@ -1,0 +1,20 @@
+.swiper{
+    width: 400px;
+    height: 400px;
+    box-sizing: border-box;
+}
+
+.swiper-wrapper{
+    display: flex;
+}
+
+.swiper-slide {
+    padding: 2%;
+    border: 2px solid #E01F3D;
+    border-radius: 15px;
+}
+
+.slide__ava{
+    width: 30%;
+    height: 30%;
+}
