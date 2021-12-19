@@ -25,6 +25,9 @@ function Header(){
                     <li className={'header__item'}>
                         <Link className={'header__item-link'} to = {'Works'}>Как работаем</Link>
                     </li>
+                    <li className={'header__item'}>
+                        <Link className={'header__item-link'} to = {'Management'}>Менеджеры</Link>
+                    </li>
                 </ul>
             </nav>
             <button className={'button header__button'} onClick={()=> setIsVisible(true)}>Вход</button>

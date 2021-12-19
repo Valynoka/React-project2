@@ -8,6 +8,8 @@ import Reviews from "./components/Reviews/Reviews";
 import Works from "./components/Works/Works";
 import Modal from "./components/Modal/Modal";
 import {createContext, useState} from "react";
+import Management from "./components/Management/Management";
+import Manager from "./components/Manager/Manager";
 
 
 export const AppContext = createContext(null);
@@ -23,12 +25,18 @@ function App() {
                     <Route index element={<StartPage/>}/>
                     <Route path={'Reviews'} element={<Reviews/>}/>
                     <Route path={'Works'} element={<Works/>}/>
+                    <Route path={'Management'} element={<ManagementLayout/>}>
+                        <Route index element = {<Management/>}/>
+                        <Route path={':userId'} element={<Manager/>}/>
+                    </Route>
                 </Route>
             </Routes>
         </AppContext.Provider>
 
     );
 }
+
+
 
 function Layout() {
     return (
@@ -43,5 +51,10 @@ function Layout() {
     )
 }
 
+function ManagementLayout() {
+    return(
+        <Outlet/>
+    )
+}
 
 export default App;

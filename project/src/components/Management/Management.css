@@ -1,0 +1,26 @@
+.user__list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+}
+.users__link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e0d8c5;
+    border: 1px solid #E01F3D;
+    padding: 5px;
+    width: 200px;
+    color: #023359;
+    border-radius: 35px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+.users__link:hover{
+    background-color: #e83c3c;
+}
