@@ -27,7 +27,7 @@ function Header(){
                     </li>
                 </ul>
             </nav>
-            <button className={'header__button button'} onClick={()=> setIsVisible(true)}>Вход</button>
+            <button className={'button header__button'} onClick={()=> setIsVisible(true)}>Вход</button>
             {/*<Link className={'header__button-link'} to = {'/'}>*/}
             {/*    <button className={'header__button button'}>Вход</button>*/}
             {/*</Link>*/}

@@ -4,7 +4,7 @@ import users from "../Data/users";
 import {AppContext} from "../../App";
 
 function LoginForm() {
-    const {setIsAuth} = useContext(AppContext)
+    const {setIsAuth, setIsVisible} = useContext(AppContext)
     const [login, setLogin] = useState('');
     const [password, setPassword] = useState('');
 
@@ -19,10 +19,13 @@ function LoginForm() {
             return alert('Пароль не совпадает')
         }
         setIsAuth(true)
-        return  alert('Вы молодец!')
+        setIsVisible(false)
+        // return  alert('Вы молодец!')
     }
     return (
         <form onSubmit={submitForm} className={'loginForm wrapper__loginForm'}>
+            <button className={'button__x'} onClick={() => setIsVisible(false)}></button>
+
             <h2 className={'loginForm__title'}>Вход</h2>
             <div className={'input loginForm__input'}>
                 <label className={'input__lable'} htmlFor={'input-email'}>Email</label>

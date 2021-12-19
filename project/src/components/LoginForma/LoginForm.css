@@ -1,5 +1,6 @@
 
 .loginForm{
+    position: relative;
     width: 70%;
     padding: 3%;
     border: 1px solid #E01F3D;
