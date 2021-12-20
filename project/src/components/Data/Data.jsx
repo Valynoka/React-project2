@@ -1,8 +1,8 @@
-import avatar from '../Img/avatar.png'
-const data = [
+
+let data = [
         {
             id: 1,
-            avatar: 'https://yandex.ru/images/search?text=avatar%20logo&from=tabbar&p=11&pos=330&rpt=simage&img_url=https%3A%2F%2Fw7.pngwing.com%2Fpngs%2F170%2F898%2Fpng-transparent-fetriece-computer-user-writing-logo-female-avatar-computer-network-text-computer.png',
+            avatar: '',
             name: 'Екатерина',
             lastname: 'Дроздова',
             text: 'Быстро, если есть очередь, то можно подождать на диванчиках. Ребята все вежливые, опрятные. Если есть вопросы, то очень толково все объясняют. Единственный минус - очень трудно найти место для парковки!'

@@ -1,0 +1,34 @@
+.input__personalNames{
+    display: flex;
+    width: 100%;
+}
+
+.input__field{
+    cursor: pointer;
+}
+
+.input__text{
+    width: 100%;
+    padding: 2%;
+    border-radius: 15px;
+    cursor: pointer;
+    border: solid 0.19rem transparent;
+    margin-bottom: 10px;
+    background-color: #e0d8c5;
+    resize: none;
+    text-decoration: none;
+    outline: none;
+}
+
+.input__text::placeholder{
+    font-family:"Alegreya Sans", sans-serif;
+    color: black;
+}
+
+.text-input__button{
+    margin-right: 5px;
+}
+
+.text-edit__button {
+    margin-right: 5px;
+}

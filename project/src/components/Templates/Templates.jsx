@@ -1,3 +1,4 @@
+import React from "react";
 import Berlin from "../Img/Berlin.png";
 import {Link} from "react-router-dom";
 import Paris from "../Img/Paris.png";
