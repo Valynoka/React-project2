@@ -20,7 +20,7 @@ function LoginForm() {
         }
         setIsAuth(true)
         setIsVisible(false)
-        // return  alert('Вы молодец!')
+        return  alert('Вы молодец!')
     }
     return (
         <form onSubmit={submitForm} className={'loginForm wrapper__loginForm'}>

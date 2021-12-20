@@ -1,7 +1,9 @@
 .swiper{
     width: 400px;
-    height: 400px;
+    height: 300px;
     box-sizing: border-box;
+    padding: 3%;
+    margin-bottom: 25px;
 }
 
 .swiper-wrapper{
@@ -9,12 +11,13 @@
 }
 
 .swiper-slide {
-    padding: 4%;
-    border: 2px solid #E01F3D;
+    padding: 5% !important;
+    /*border: 2px solid #E01F3D;*/
     border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 .slide__ava{
-    width: 30%;
+    width: 22%;
     height: 30%;
 }

@@ -1,5 +1,6 @@
 import './Reviews.css'
 import Swiper from "../Swiper/Swiper";
+import TextInput from "../TextInput/TextInput";
 
 
 function Reviews(){
@@ -7,6 +8,7 @@ function Reviews(){
         <>
             <h2 className={'reviews__title'}>Отзывы</h2>
             <Swiper/>
+            <TextInput/>
         </>
     )
 }

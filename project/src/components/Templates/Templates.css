@@ -1,0 +1,44 @@
+.templates{
+    padding: 2%;
+}
+.templates__title{
+    font-size: 120%;
+    margin-bottom: 15px;
+}
+
+.templates__list{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.templates__item{
+    width: 15%;
+    background-color: rgba(255, 255, 255, 0.35);
+    border-radius: 15px;
+    margin-bottom: 15px;
+    margin-right: 10px;
+    /*display: inline-block;*/
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.templates__pic{
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.templates__item-title{
+    margin-bottom: 5px;
+}
+
+.templates__item-info{
+    margin-bottom: 5px;
+}
+
+.templates__item-price{
+    margin-bottom: 5px;
+}

@@ -5,7 +5,6 @@ import "swiper/css";
 import data from "../Data/Data";
 import avatar from '../Img/avatar.png'
 
-
 // import Swiper core and required modules
 import SwiperCore, {
     Mousewheel,Pagination
@@ -13,6 +12,8 @@ import SwiperCore, {
 import "swiper/css/pagination"
 // install Swiper modules
 SwiperCore.use([Mousewheel,Pagination]);
+
+
 
 function SwiperSlider(){
     const[slides, setSlides] =  useState([]);

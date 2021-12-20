@@ -20,18 +20,18 @@
     }
 }
 
-.startPage__text:before{
-    content: '';
-    position: absolute;
-    background-color: #FE351F;
-    filter: blur(200px);
-    width: 50%;
-    height: 50%;
-    top: 0;
-    right: 0;
-    border-radius: 50%;
-    z-index: 1;
-}
+/*.startPage__text:before{*/
+/*    content: '';*/
+/*    position: absolute;*/
+/*    background-color: #FE351F;*/
+/*    filter: blur(220px);*/
+/*    width: 50%;*/
+/*    height: 50%;*/
+/*    top: 0;*/
+/*    right: 0;*/
+/*    border-radius: 50%;*/
+/*    z-index: 1;*/
+/*}*/
 
 .startPage__title{
     font-size: 400%;
@@ -54,7 +54,7 @@
 
 @media screen and (max-width: 768px){
     .startPage__title{
-        font-size: 260%;
+        font-size: 230%;
         margin-bottom: 25px;
     }
 }
@@ -110,6 +110,7 @@
     width: 50%;
     outline: none;
     font-size: 100%;
+    background: inherit;
 }
 
 .startPage__button{

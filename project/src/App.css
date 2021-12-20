@@ -7,11 +7,51 @@
   align-items: center;
   flex: 1 1 auto;
   padding: 2% 10%;
-  /*min-width: 0;*/
-  /*position: relative;*/
-  /*max-width: 1144px;*/
-  /*margin: 0 auto;*/
+  position: relative;
+
 }
+
+.App:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+  background-color: #ee9f0f;
+  filter: blur(400px);
+  z-index: -1;
+}
+
+.App:after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+  background-color: #03abd2;
+  filter: blur(400px);
+  z-index: -1;
+}
+
+
+
+/*.App::before {*/
+/*  content: '';*/
+/*  position: absolute;*/
+/*  background-color: #6ed4e5;*/
+/*  filter: blur(1000px);*/
+/*  width: 50%;*/
+/*  height: 50%;*/
+/*  bottom: 0;*/
+/*  left: 0;*/
+/*  border-radius: 50%;*/
+/*  z-index: 1;*/
+/*}*/
+
 
 .App-logo {
   height: 40vmin;
