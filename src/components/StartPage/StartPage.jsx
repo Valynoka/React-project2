@@ -8,7 +8,7 @@ function StartPage (){
             <div className={'startPage__text'}>
                 <h1 className={'startPage__title'}>Предоставьте доставку нам!</h1>
                 <p className={'startPage__subtitle'}>Доставим быстро, качественно и в любую точку мира. Вы отхаете - мы думаем!</p>
-                <form className={'startPage__form'}>
+                <form className={'startPage__form'} onSubmit={(event)=>event.preventDefault()}>
                     <label className={'startPage__label'}>
                         <input type={'text'} className={'startPage__input'} placeholder={'Вопросы'}/>
                         <button className={'startPage__button button'}>Отправить</button>

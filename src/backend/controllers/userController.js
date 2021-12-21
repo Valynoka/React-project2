@@ -1,4 +1,4 @@
-const users = [
+let users = [
     {
         login: 'admin',
         password: 'admin'
@@ -13,4 +13,10 @@ const users = [
     }
 ]
 
-export default users
+class UserController {
+    async getAll(req, res) {
+        return res.json(users)
+    }
+}
+
+module.exports = new UserController()

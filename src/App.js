@@ -7,9 +7,10 @@ import StartPage from "./components/StartPage/StartPage";
 import Reviews from "./components/Reviews/Reviews";
 import Works from "./components/Works/Works";
 import Modal from "./components/Modal/Modal";
-import {createContext, useState} from "react";
+import {createContext, useEffect, useState} from "react";
 import Management from "./components/Management/Management";
 import Manager from "./components/Manager/Manager";
+import axios from "axios";
 
 
 export const AppContext = createContext(null);
@@ -17,9 +18,23 @@ export const AppContext = createContext(null);
 function App() {
     const [isAuth, setIsAuth] = useState(false);
     const [isVisible, setIsVisible] = useState(false);
+    const [slides, setSlides] = useState([]);
+
+    async function getSlides() {
+        try {
+            const response = await axios.get("http://localhost:8080/post")
+            return response.data
+        }
+        catch (e) {
+            console.log(e)
+        }
+    }
+    useEffect(() => {
+        getSlides().then((res)=> setSlides(res))
+    }, []);
 
     return (
-        <AppContext.Provider value = {{isAuth, setIsAuth, isVisible, setIsVisible}}>
+        <AppContext.Provider value = {{isAuth, setIsAuth, isVisible, setIsVisible,slides, setSlides}}>
             <Routes>
                 <Route path={'/'} element={<Layout/>}>
                     <Route index element={<StartPage/>}/>

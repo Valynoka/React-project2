@@ -8,7 +8,7 @@ import {AppContext} from "../../App";
 
 
 function Header(){
-    const {isVisible, setIsVisible} = useContext(AppContext)
+    const {isVisible, setIsVisible, isAuth, setIsAuth} = useContext(AppContext)
     return(
         <header className={'header'}>
             <Link className={'header__logo-link'} to = {'/'}>
@@ -31,7 +31,8 @@ function Header(){
                     </li>
                 </ul>
             </nav>
-            <button className={'button header__button'} onClick={()=> setIsVisible(true)}>Вход</button>
+            {!isAuth && <button className={'button header__button'} onClick={()=> setIsVisible(true)}>Вход</button>}
+            {isAuth && <button className={'button header__button'} onClick={()=> setIsAuth(false)}>Выход</button>}
             {/*<Link className={'header__button-link'} to = {'/'}>*/}
             {/*    <button className={'header__button button'}>Вход</button>*/}
             {/*</Link>*/}

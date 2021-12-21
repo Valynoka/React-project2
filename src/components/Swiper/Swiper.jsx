@@ -1,34 +1,27 @@
 import './Swiper.css'
-import { useEffect, useState} from "react";
+import {useContext, useEffect, useState} from "react";
 import {Swiper, SwiperSlide} from "swiper/react";
 import "swiper/css";
 import data from "../Data/Data";
 import avatar from '../Img/avatar.png'
 // import TextInput from "../TextInput/TextInput";
 
-
-
 // import Swiper core and required modules
 import SwiperCore, {
-    Mousewheel,Pagination
+    Mousewheel, Pagination
 } from 'swiper';
 import "swiper/css/pagination"
+import axios from "axios";
+import {AppContext} from "../../App";
 // install Swiper modules
-SwiperCore.use([Mousewheel,Pagination]);
+SwiperCore.use([Mousewheel, Pagination]);
 
 
+function SwiperSlider() {
+    const {slides} = useContext(AppContext)
 
-function SwiperSlider(){
-
-    const[slides, setSlides] =  useState([]);
-    useEffect(()=> {
-        const response = data
-        setSlides(response);
-    }, []);
-
-
-    if (!slides) {
-        return(
+    if (!slides.length) {
+        return (
             <div className={'slides__loading'}>Скоро вы увидите восторженные комментарии...</div>
         )
     }

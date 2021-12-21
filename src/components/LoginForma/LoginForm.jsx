@@ -3,15 +3,26 @@ import './LoginForm.css'
 import {useContext, useState} from "react";
 import users from "../Data/users";
 import {AppContext} from "../../App";
+import axios from "axios";
 
 function LoginForm() {
     const {setIsAuth, setIsVisible} = useContext(AppContext)
     const [login, setLogin] = useState('');
     const [password, setPassword] = useState('');
 
-    function submitForm(e){
-        e.preventDefault()
+    async function getUsers() {
+        try {
+            const response = await axios.get('http://localhost:8080/user')
+            return response.data
+        }
+        catch (e) {
+            console.log(e)
+        }
+    }
 
+    async function submitForm(e){
+        e.preventDefault()
+        const users = await getUsers()
         const user = users.find(item => item.login === login)
         if (!user) {
             return alert('Пользователь не зарегистрирован')

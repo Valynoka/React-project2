@@ -3,8 +3,8 @@ import Swiper from "../Swiper/Swiper";
 import TextInput from "../TextInput/TextInput";
 
 
-function Reviews(){
-    return(
+function Reviews() {
+    return (
         <>
             <h2 className={'reviews__title'}>Отзывы</h2>
             <Swiper/>
@@ -12,4 +12,5 @@ function Reviews(){
         </>
     )
 }
+
 export default Reviews;
