@@ -15,7 +15,7 @@ function TextInput() {
 
     async function postReview(post) {
         try {
-            const response = await axios.get('http://localhost:8080/post', post)
+            const response = await axios.post('http://localhost:8080/post', post)
             //возвращает актуальный массив с базы данных
             return response.data
         } catch (e) {
@@ -23,7 +23,7 @@ function TextInput() {
         }
     }
 
-    const createPost = (e) => {
+    const createPost = async (e) => {
         e.preventDefault()
         const newPost = {
             id: Number(nanoid()),
@@ -32,9 +32,9 @@ function TextInput() {
             text: text,
             avatar: '',
         }
-        postReview(newPost).then((res) => {
-            setSlides(res)
-        })
+        const res = await postReview(newPost)
+        setSlides(res)
+
     }
 
 
