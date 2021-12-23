@@ -20,3 +20,10 @@ const start = async () => {
 }
 
 start()
+
+
+// CRUD
+// Create
+// Read
+// Update
+// Delete

@@ -1,7 +1,5 @@
-import React from "react";
+import React, {useContext, useState} from "react";
 import './LoginForm.css'
-import {useContext, useState} from "react";
-import users from "../Data/users";
 import {AppContext} from "../../App";
 import axios from "axios";
 

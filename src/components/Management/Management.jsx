@@ -13,7 +13,7 @@ function Management() {
             const allUsers = response.data.data;
             setUsers(allUsers);
         });
-    }, [setUsers]);
+    }, []);
     return (
         <>
             {users.map((item) =>

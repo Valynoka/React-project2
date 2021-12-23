@@ -6,7 +6,7 @@ import Osaka from "../Img/Osaka.png";
 import Ottawa from "../Img/Ottawa.png";
 import London from '../Img/London.png';
 import Roma from "../Img/Roma.png";
-import './Templates.css'
+import './Templates.scss'
 
 function Templates(){
     return(

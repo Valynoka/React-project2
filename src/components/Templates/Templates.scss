@@ -1,17 +1,18 @@
-.templates{
-    padding: 2%;
-}
-.templates__title{
+.templates {
+  padding: 8px;
+
+  &__title {
     font-size: 120%;
     margin-bottom: 15px;
-}
+  }
 
-.templates__list{
+  &__list {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-}
-.templates__item{
+  }
+
+  &__item {
     width: 15%;
     background-color: rgba(255, 255, 255, 0.35);
     border-radius: 15px;
@@ -24,21 +25,22 @@
     align-items: center;
     justify-content: space-between;
 
-}
+    &-title {
+      margin-bottom: 5px;
+    }
 
-.templates__pic{
+    &-info {
+      margin-bottom: 5px;
+    }
+
+    &-price {
+      margin-bottom: 5px;
+    }
+  }
+
+  &__pic {
     width: 100%;
     margin-bottom: 5px;
+  }
 }
 
-.templates__item-title{
-    margin-bottom: 5px;
-}
-
-.templates__item-info{
-    margin-bottom: 5px;
-}
-
-.templates__item-price{
-    margin-bottom: 5px;
-}

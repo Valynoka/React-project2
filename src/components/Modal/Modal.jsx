@@ -2,7 +2,6 @@ import './Modal.css'
 import LoginForm from "../LoginForma/LoginForm";
 import {useContext} from "react";
 import {AppContext} from "../../App";
-import { useEffect } from 'react';
 
 function Modal(){
     const {isVisible, setIsVisible} = useContext(AppContext)

@@ -2,7 +2,7 @@ import React, {useContext, useState} from "react";
 import './TextInput.css'
 import {customAlphabet} from "nanoid";
 import {AppContext} from "../../App";
-import axios from "axios";
+import {postReview} from "../../api";
 
 const nanoid = customAlphabet('1234567890', 10)
 
@@ -12,17 +12,7 @@ function TextInput() {
     const [name, setName] = useState('');
     const [lastname, setLastname] = useState('');
     const [text, setText] = useState('');
-
-    async function postReview(post) {
-        try {
-            const response = await axios.post('http://localhost:8080/post', post)
-            //возвращает актуальный массив с базы данных
-            return response.data
-        } catch (e) {
-            console.log(e)
-        }
-    }
-
+    
     const createPost = async (e) => {
         e.preventDefault()
         const newPost = {
@@ -41,7 +31,7 @@ function TextInput() {
     }
 
     return (
-        <form onSubmit={createPost}  className={'text-input wrapper__text-input'}>
+        <form onSubmit={createPost} className={'text-input wrapper__text-input'}>
 
             <div className={'input text-input__input'}>
                 <div className={'input__personalNames'}>

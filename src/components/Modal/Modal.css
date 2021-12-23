@@ -17,9 +17,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
-
 }
+
 .modal:before{
     content: '';
     position: absolute;

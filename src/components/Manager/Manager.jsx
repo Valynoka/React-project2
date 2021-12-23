@@ -20,30 +20,16 @@ function Manager() {
         )
     }
 
-
-    function ManagerId() {
-        return (
-            <h3 className={'manager__title'}>Менеджер: {userId} </h3>
-        )
-    }
-
-    function ManagerInfo() {
-        const {avatar, email, first_name, last_name} = manager
-        return (
-            <>
-                <img className={'manager__photo'} src={avatar} alt="avatar" />
-                <p className={'manager__text'}>email: {email}</p>
-                <p className={'manager__text'}> Name: {first_name}</p>
-                <p className={'manager__text'}> Lastname: {last_name}</p>
-            </>
-        )
-    }
+    const {avatar, email, first_name, last_name} = manager
 
     return (
-        <>
-            <ManagerId/>
-            <ManagerInfo/>
-        </>
+        <div>
+            <h3 className={'manager__title'}>Менеджер: {userId} </h3>
+            <img className={'manager__photo'} src={avatar} alt="avatar"/>
+            <p className={'manager__text'}>email: {email}</p>
+            <p className={'manager__text'}> Name: {first_name}</p>
+            <p className={'manager__text'}> Lastname: {last_name}</p>
+        </div>
     )
 }
 
