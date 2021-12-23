@@ -7,11 +7,11 @@ import axios from "axios";
 const nanoid = customAlphabet('1234567890', 10)
 
 function TextInput() {
-    const { setSlides} = useContext(AppContext)
+    const {setSlides} = useContext(AppContext)
 
-    const [name, setName] = useState([]);
-    const [lastname, setLastname] = useState([]);
-    const [text, setText] = useState([]);
+    const [name, setName] = useState('');
+    const [lastname, setLastname] = useState('');
+    const [text, setText] = useState('');
 
     async function postReview(post) {
         try {
@@ -34,12 +34,14 @@ function TextInput() {
         }
         const res = await postReview(newPost)
         setSlides(res)
+        setName('')
+        setLastname('')
+        setText('')
 
     }
 
-
     return (
-        <form onSubmit={createPost} className={'text-input wrapper__text-input'}>
+        <form onSubmit={createPost}  className={'text-input wrapper__text-input'}>
 
             <div className={'input text-input__input'}>
                 <div className={'input__personalNames'}>
@@ -69,10 +71,10 @@ function TextInput() {
                 />
             </div>
             <button className="button text-input__button" id='button' type={'submit'}>Отправить</button>
-            <button className="button text-edit__button" id='button-edit'>Изменить</button>
-            <button className="button text-del__button" id='button-del'>Удалить отзыв</button>
+            {/*<button className="button text-edit__button" id='button-edit'>Изменить</button>*/}
         </form>
     )
+
 }
 
 export default TextInput;
