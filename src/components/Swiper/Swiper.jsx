@@ -17,6 +17,7 @@ SwiperCore.use([Mousewheel, Pagination]);
 
 
 function SwiperSlider() {
+    const {isAuth} = useContext(AppContext)
     const {slides, setSlides} = useContext(AppContext)
 
     useEffect(() => {
@@ -28,7 +29,6 @@ function SwiperSlider() {
             <div className={'slides__loading'}>Скоро вы увидите восторженные комментарии...</div>
         )
     }
-
 
     return (
 
@@ -42,7 +42,7 @@ function SwiperSlider() {
                         <div className={'swiper-wrapper'} key={item.id}>
 
                             <SwiperSlide className={'swiper-slide'}>
-                                <button className={'button__x'} onClick={() => deletePost(item.id, setSlides)}></button>
+                                {isAuth && <button className={'button__x'} onClick={() => deletePost(item.id, setSlides)}></button>}
                                 <img className={'slide__ava'} src={avatar} alt={'avatar'}/>
                                 <p className={'slide__name'}>{item.name}</p>
                                 <p className={'slide__lastname'}>{item.lastname}</p>

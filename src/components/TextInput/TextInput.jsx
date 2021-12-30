@@ -31,7 +31,7 @@ function TextInput() {
     }
 
     return (
-        <form onSubmit={createPost} className={'text-input wrapper__text-input'}>
+         <form onSubmit={createPost} className={'text-input wrapper__text-input'}>
 
             <div className={'input text-input__input'}>
                 <div className={'input__personalNames'}>

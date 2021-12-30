@@ -10,6 +10,7 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   &__item {
@@ -25,7 +26,19 @@
     align-items: center;
     justify-content: space-between;
 
-    &-title {
+    @media screen and (max-width: 1000px){
+        width: 30%;
+      }
+    @media screen and (max-width: 768px){
+      width: 46%;
+    }
+
+    @media screen and (max-width: 480px){
+      width: 100%;
+    }
+
+
+      &-title {
       margin-bottom: 5px;
     }
 
@@ -43,4 +56,6 @@
     margin-bottom: 5px;
   }
 }
+
+
 

@@ -1,0 +1,13 @@
+.calc-form__out{
+    width: 100%;
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*width: 150px;*/
+    height: 60px;
+    background-color: #e0d8c5;
+    border-radius: 15px;
+}
+
+.input__track{
+    width: 100%;
+}
