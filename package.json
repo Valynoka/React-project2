@@ -1,5 +1,5 @@
 {
-  "homepage": "https://valynoka.github.io/React_project2",
+  "homepage": "https://valynoka.github.io/React_project2/",
   "name": "project",
   "version": "0.1.0",
   "private": false,
@@ -21,7 +21,7 @@
     "web-vitals": "^2.1.2"
   },
   "scripts": {
-    "predeploy": "npm run build",
+    "predeploy": "yarn build",
     "deploy": "gh-pages -d build",
     "start": "concurrently \"react-scripts start\" \"cd src/backend && yarn && yarn start\"",
     "build": "react-scripts build",
