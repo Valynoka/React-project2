@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/React-project2/static/css/main.3accac66.css",
+    "main.js": "/React-project2/static/js/main.88e83735.js",
+    "static/media/Osaka.png": "/React-project2/static/media/Osaka.2d8d9fcf9b012e0dfde7.png",
+    "static/media/Berlin.png": "/React-project2/static/media/Berlin.81cec57465af6acf19fb.png",
+    "static/media/Roma.png": "/React-project2/static/media/Roma.1c8ae6cfbe7e61bc796b.png",
+    "static/media/Ottawa.png": "/React-project2/static/media/Ottawa.d389a4696ec9bd644a7d.png",
+    "static/media/Paris.png": "/React-project2/static/media/Paris.45a964378bd6bb4fc067.png",
+    "static/media/London.png": "/React-project2/static/media/London.de7328662865a9d2759a.png",
+    "static/media/Shadow.png": "/React-project2/static/media/Shadow.7e25c12580dfc4574c2e.png",
+    "static/media/Illustration.png": "/React-project2/static/media/Illustration.4f2c9e78e1434b24d94e.png",
+    "static/media/avatar.png": "/React-project2/static/media/avatar.3f42300e59dc8f356bc4.png",
+    "static/media/telegram.png": "/React-project2/static/media/telegram.28f6fc50e59d1a9a75cb.png",
+    "index.html": "/React-project2/index.html",
+    "main.3accac66.css.map": "/React-project2/static/css/main.3accac66.css.map",
+    "main.88e83735.js.map": "/React-project2/static/js/main.88e83735.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3accac66.css",
+    "static/js/main.88e83735.js"
+  ]
+}
